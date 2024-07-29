@@ -61,7 +61,7 @@
               Stacy Kukunda, stacykukunda@gmail.com<br>
               Atuhaire Mary Seanice, atuhaireseanice@gmail.com<br>
               Kakembo Bonifance Joshua, bnnyjosh45@gmail.com<br>
-              Kampi Gloria BUlamu, kampigloria2002@gmail.com<br>
+              Kampi Gloria Bulamu, kampigloria2002@gmail.com<br>
             </p>
           </div>
 
@@ -183,35 +183,53 @@
 <!--End About Us-->
 
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Image buttons-->
+        <!--Start How it works here-->
         <div class="flex-row">
-           <div class="flex-item flex-column">
-             <h2 id="text-only">How It Works</h2>
-             <hr>
-             <p class="text">
-               Our system streamlines the process of class attendance tracking by combining NFC technology with Face ID authentication and real-time data management. Here's how it works:
-             </p>
+          <div class="flex-item flex-column">
+        <h2 id="text-only">How It Works</h2>
+        <hr>
+        <p class="text">
+            Our system streamlines the process of class attendance tracking by combining NFC technology with Face ID authentication and real-time data management. Here's how it works:
+        </p>
 
         <h3>NFC Chip Reading</h3>
-             <p class="text">
-               As students arrive, they present their NFC-enabled ID cards or smartphones to an NFC reader. The system reads the unique NFC ID associated with the student, instantly recognizing and logging their presence. This ensures accurate attendance recording in real-time.
-             </p>             
-                <h3>Face ID Authentication</h3>
         <p class="text">
-            After NFC authentication, students receive a prompt on their device to authenticate using Face ID. The system captures their facial image and matches it against stored data to verify identity, adding an extra layer of security and preventing impersonation.
-        </p>     
-
+            As students arrive, they present their NFC-enabled ID cards or smartphones to an NFC reader. The system reads the unique NFC ID associated with the student, instantly recognizing and logging their presence. 
+            The NFC reader communicates with the ESP32 microcontroller, which processes the ID information and verifies it against the registered database.
+            This ensures accurate attendance recording in real-time. The use of NFC technology significantly reduces the time spent on manual check-ins and minimizes errors.
+        </p>
+        
+        <h3>Face ID Authentication</h3>
+        <p class="text">
+            After NFC authentication, students receive a prompt on their device to authenticate using Face ID. The system captures their facial image through the device's camera and matches it against stored data in the cloud database.
+            This process involves advanced facial recognition algorithms to ensure high accuracy and security. Face ID authentication adds an extra layer of security, preventing impersonation and ensuring that the student attending the class is the one registered.
+            The combination of NFC and Face ID ensures a robust two-factor authentication mechanism.
+        </p>
+        
         <h3>Data Management and Export</h3>
         <p class="text">
-            Attendance data is processed in real-time and stored in a cloud database. The system integrates with Google Sheets for data export, allowing administrators to access, analyze, and maintain records easily. This ensures data accuracy and supports efficient administrative processes.
-        </p>       
+            Attendance data is processed in real-time and stored in a Firebase Realtime Database. This cloud-based solution allows for instantaneous data updates, ensuring that records are always current.
+            The system integrates with Google Sheets for data export, enabling administrators to access and analyze attendance records conveniently. 
+            This feature supports the generation of reports, tracking attendance trends, and maintaining accurate records for administrative purposes.
+            The export functionality ensures that data can be easily shared and used for further analysis, ensuring compliance with institutional reporting requirements.
+        </p>
+        
         <h3>Notifications and Alerts</h3>
         <p class="text">
-            The system sends automated notifications to students and administrators, confirming attendance records and highlighting any issues such as absences or discrepancies. This feature helps maintain transparency and timely communication.
+            The system sends automated notifications to students and administrators. When a student checks in, they receive a confirmation message on their device.
+            Administrators are alerted to any discrepancies or issues, such as unregistered NFC tags or failed Face ID verifications.
+            Notifications are sent via email or SMS, ensuring that all stakeholders are promptly informed about attendance-related updates. 
+            This feature enhances transparency and accountability, as both students and administrators are kept in the loop about attendance records and any issues that may arise.
+        </p>
+        
+        <p class="text">
+            Each of these features integrates seamlessly to provide a comprehensive solution for class attendance management.
+            Our system is designed to enhance the accuracy, efficiency, and security of attendance tracking, making it an invaluable tool for educational institutions.
         </p>
     </div>
+
         </div>
-        <!--End Text with Images and Image buttons-->
+        <!--End ocf hoe it works-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text around Image-->
         <div class="flex-row">
