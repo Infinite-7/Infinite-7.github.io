@@ -229,32 +229,47 @@
     </div>
 
         </div>
-        <!--End ocf hoe it works-->
+        <!--End of how it works-->
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text around Image-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="text-around-image">Text around Image</h2>
+        <!--Start of features-->
+       <div class="flex-row">
+        <div class="flex-item flex-column">
+            <h2 id="text-only">How It Works</h2>
             <hr>
             <p class="text">
-              <img class="image image-wrap-text max-width-400" src="img/dummay-img.png">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-              aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-              voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-              pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-              similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-              rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis.
+                This class attendance system leverages advanced technologies to streamline and secure the process of tracking student presence. The system integrates NFC (Near Field Communication) and Face ID (Facial Recognition) technologies, alongside robust data management and notification features. Below is an in-depth look at how each component functions.
             </p>
-          </div>
+
+            <h3>NFC Chip Reading</h3>
+            <p class="text">
+                NFC (Near Field Communication) is a form of wireless communication that allows data exchange over very short distances (typically 4 cm or less). In the context of an attendance system, students are issued NFC-enabled ID cards or smartphones. When a student taps their NFC card or phone against an NFC reader, the reader transmits a unique identifier associated with that card or device. 
+                The reader sends this identifier to a central system, where it is cross-referenced with a database to verify the student's identity. This process is nearly instantaneous, providing a quick and efficient way to record attendance. NFC technology minimizes the need for physical interaction and reduces the chances of errors commonly associated with manual attendance tracking. Its contactless nature also enhances hygiene and convenience.
+            </p>
+            
+            <h3>Face ID Authentication</h3>
+            <p class="text">
+                Face ID authentication employs biometric technology to verify an individual's identity based on facial features. After a student’s NFC ID is read, they are prompted to complete an additional verification step using Face ID. This process involves capturing an image of the student’s face through a camera and analyzing various facial features, such as the distance between the eyes, nose, and mouth. 
+                The system compares the captured image against a pre-stored facial template in a secure database. Advanced algorithms are used to ensure high accuracy and prevent false matches. Face ID adds an extra layer of security by confirming that the person checking in is indeed the registered student, thereby reducing the potential for impersonation. This two-factor authentication method combines the ease of NFC with the security of biometric verification.
+            </p>
+            
+            <h3>Data Management and Export</h3>
+            <p class="text">
+                Effective data management is crucial for maintaining accurate and up-to-date attendance records. The system records each attendance event in real-time and stores the data in a cloud-based database, such as Firebase Realtime Database. This ensures that attendance records are always current and accessible from anywhere with the proper permissions.
+                Data management features include automatic updates, data integrity checks, and secure storage. Additionally, the system integrates with platforms like Google Sheets for data export. This functionality allows administrators to easily generate and analyze reports, track attendance trends, and maintain comprehensive records for reporting and decision-making purposes. The export feature ensures that data can be utilized for various administrative tasks and compliance with educational standards.
+            </p>
+            
+            <h3>Notifications and Alerts</h3>
+            <p class="text">
+                Notifications and alerts are designed to keep all stakeholders informed about the status of attendance. When a student successfully checks in, the system sends a confirmation notification to their device, providing immediate feedback. 
+                Administrators receive alerts for any anomalies, such as unrecognized NFC tags or failed Face ID attempts. These alerts help in promptly addressing issues and maintaining the accuracy of attendance records. Notifications can be delivered through various channels, including email and SMS, ensuring that information reaches users in a timely manner. This feature enhances transparency and accountability by keeping both students and administrators informed about attendance-related events and potential issues.
+            </p>
+            
+            <p class="text">
+                The seamless integration of these technologies ensures an efficient and secure attendance management system. By combining NFC, Face ID, real-time data management, and automated notifications, the system provides a comprehensive solution for modern educational institutions.
+            </p>
         </div>
-        <!--End Text around Image-->
+    </div>
+        <!--End of features-->
         <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
